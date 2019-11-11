@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_a"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/fragment_a_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Change_Word"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/tv_fragmentA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="This is Fragment A"
+        android:textSize="30dp" />
+
+</LinearLayout>

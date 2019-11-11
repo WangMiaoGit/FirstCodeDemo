@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--自定义属性-->
+<resources>
+    <declare-styleable name="name">
+        <attr name="title" format="string"/>
+        <attr name="titleTextSize" format="string"/>
+    </declare-styleable>
+</resources>

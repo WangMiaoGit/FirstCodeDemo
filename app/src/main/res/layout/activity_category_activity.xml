@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".ui.category.CategoryActivity">
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="90dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhit">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycle_left"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible" />
+
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+
+<!--        <android.support.v7.widget.LinearLayoutCompat-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical">-->
+            <!--            <com.zhpan.bannerview.BannerViewPager-->
+            <!--                android:id="@+id/viewpager"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="150dp"-->
+            <!--                android:layout_margin="10dp" />-->
+<!--            <com.youth.banner.Banner-->
+<!--                android:id="@+id/new_banner"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="200dp"-->
+<!--                android:visibility="visible" />-->
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycle_right"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+
+
+
+
+<!--        </android.support.v7.widget.LinearLayoutCompat>-->
+
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+</android.support.v7.widget.LinearLayoutCompat>

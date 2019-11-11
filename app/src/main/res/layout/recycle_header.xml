@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorGrey"
+    android:gravity="center"
+    android:padding="10dp">
+
+    <com.youth.banner.Banner
+        android:id="@+id/banner"
+        android:layout_width="380dp"
+        android:layout_height="200dp"
+        app:indicator_height="@dimen/dp_10"
+        app:indicator_margin="10dp"
+        app:indicator_width="@dimen/dp_10" />
+    <!--    <com.zhpan.bannerview.BannerViewPager-->
+    <!--        android:id="@+id/banner"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_margin="10dp"-->
+    <!--        android:layout_height="200dp" />-->
+
+    <!--    <cn.bingoogolapple.bgabanner.BGABanner-->
+
+    <!--        android:id="@+id/banner_guide_content"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="200dp"-->
+    <!--        app:banner_pageChangeDuration="1000"-->
+    <!--        app:banner_pointAutoPlayAble="true"-->
+    <!--        app:banner_pointContainerBackground="@android:color/transparent"-->
+    <!--        app:banner_pointDrawable="@drawable/bga_banner_selector_point_hollow"-->
+    <!--        app:banner_pointTopBottomMargin="15dp"-->
+    <!--        app:banner_transitionEffect="alpha" />-->
+
+    <!--    <android.support.v7.widget.LinearLayoutCompat-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="40dp"-->
+    <!--        android:orientation="horizontal"-->
+    <!--        android:gravity="center">-->
+    <!--        <View-->
+    <!--            android:layout_width="0dp"-->
+    <!--            android:layout_weight="1"-->
+    <!--            android:layout_height="2dp"-->
+    <!--            android:background="@color/colorBlack"/>-->
+    <!--        <TextView-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text="精品推荐"-->
+    <!--            android:textStyle="bold"-->
+    <!--            android:layout_margin="10dp"-->
+    <!--            android:textSize="14sp"/>-->
+    <!--        <View-->
+    <!--            android:layout_width="0dp"-->
+    <!--            android:layout_weight="1"-->
+    <!--            android:layout_height="2dp"-->
+    <!--            android:background="@color/colorBlack"/>-->
+    <!--    </android.support.v7.widget.LinearLayoutCompat>-->
+
+
+</android.support.v7.widget.LinearLayoutCompat>
+
+

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/main_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorAccent"
+        android:paddingTop="10dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_open"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OPEN" />
+
+        <Button
+            android:id="@+id/btn_open_md"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GO_MD" />
+
+        <Button
+            android:id="@+id/btn_open_musicUi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button" />
+
+        <Button
+            android:id="@+id/btn_open_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GO_VIEW" />
+    </LinearLayout>
+    <com.youth.banner.Banner
+        android:layout_marginTop="400dp"
+        android:id="@+id/te_banner"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"/>
+
+
+    <com.example.firstcodedemo.ui.UITextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="150dp"
+        android:gravity="center"
+        android:text="TextViewTextViewTextView"
+        android:textSize="30sp" />
+
+
+    <!--    <com.example.firstcodedemo.ui.MTextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="220dp"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp" />-->
+    <com.example.firstcodedemo.ui.MusicUi
+        android:id="@+id/musicUi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp" />
+
+    <ImageView
+        android:id="@+id/img_main"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="200dp"
+        android:visibility="gone" />
+
+
+</FrameLayout>
