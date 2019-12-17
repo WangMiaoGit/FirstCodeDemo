@@ -12,7 +12,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppThemeNoDialog">
-        <activity android:name=".ui.category.CategoryActivity"></activity>
+        <activity android:name=".ui.selector.SelectorActivity"></activity>
+        <activity android:name=".activity.FragmentActivity" />
+        <activity android:name=".ui.category.CategoryActivity" />
         <activity android:name=".activity.PaintActivity" />
         <activity android:name=".ui.captcha.ImgCapthcaActivity" />
         <activity android:name=".activity.FruitActivity" />

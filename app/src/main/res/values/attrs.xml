@@ -1,8 +1,17 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--自定义属性-->
+<?xml version="1.0" encoding="utf-8"?><!--自定义属性-->
 <resources>
     <declare-styleable name="name">
-        <attr name="title" format="string"/>
-        <attr name="titleTextSize" format="string"/>
+        <attr name="title" format="string" />
+        <attr name="titleTextSize" format="string" />
     </declare-styleable>
+
+    <declare-styleable name="Selector">
+        <attr name="text" format="string" />
+        <attr name="img" format="reference" />
+        <attr name="indicator" format="reference" />
+        <attr name="text_size" format="integer" />
+        <attr name="text_color" format="color" />
+        <attr name="tag" format="reference" />
+    </declare-styleable>
+
 </resources>

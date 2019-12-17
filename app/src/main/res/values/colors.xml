@@ -10,4 +10,22 @@
     <color name="colorMain">#fff05615</color>
 
 
+    //主色调/默认按钮/可点击文字/商品价格
+    <color name="main_btn_text_price">#F05615</color>
+    //辅助色
+    <color name="auxiliary">#656F8A</color>
+    //主体文字颜色
+    <color name="main_text">#333333</color>
+    //辅助信息，说明文字
+    <color name="auxiliary_information">#666666</color>
+    //次要信息
+    <color name="secondary_information">#999999</color>
+    //分割线。外边框
+    <color name="split_line">#E8ECF4</color>
+    //错误提示
+    <color name="error_message">#DC0A0A</color>
+    //页面背景色
+    <color name="main_bg">#F2F2F2</color>
+    <color name="main_text_black">#000000</color>
+
 </resources>

@@ -213,6 +213,21 @@ abstract class MyAbsActivity : AppCompatActivity() {
         }
     }
 
+
+    protected fun immersiveStatus2() {
+        //Android 6.0+ （亮色状态栏）
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            window.statusBarColor = Color.TRANSPARENT
+            // Translucent status bar
+            window.setFlags(
+                WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS,
+                WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
+        } else {
+            window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
+        }
+    }
+
+
     /**
      * 全屏显示，状态栏不可见
      * 当系统为9.0+时，要设置布局是否可以绘制到刘海区域
@@ -235,6 +250,8 @@ abstract class MyAbsActivity : AppCompatActivity() {
                 View.SYSTEM_UI_FLAG_FULLSCREEN or View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
         }
     }
+
+
 
     /**
      * 获取刘海区信息

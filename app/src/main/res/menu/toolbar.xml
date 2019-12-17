@@ -3,17 +3,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
         android:id="@+id/backup"
-        android:icon="@drawable/ic_backup_black"
+        android:icon="@mipmap/icon_collect_nor"
         android:title="Backup"
         app:showAsAction="always" />
     <item
         android:id="@+id/delete"
-        android:icon="@drawable/ic_delete_black"
+        android:icon="@mipmap/icon_share"
         android:title="Delete"
         app:showAsAction="always" />
-    <item
-        android:id="@+id/settings"
-        android:icon="@drawable/ic_settings_black"
-        android:title="Settings"
-        app:showAsAction="always" />
+<!--    <item-->
+<!--        android:id="@+id/settings"-->
+<!--        android:icon="@drawable/ic_settings_black"-->
+<!--        android:title="Settings"-->
+<!--        app:showAsAction="always" />-->
 </menu>

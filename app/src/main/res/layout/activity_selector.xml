@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.selector.SelectorActivity">
+
+    <!--multiple-choice-->
+    <TextView
+        android:id="@+id/tvMultiple"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:text="multiple-choice mode"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.example.firstcodedemo.ui.selector.imp.MySelector
+            android:id="@+id/selector_10"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:img="@mipmap/teenage"
+            app:indicator="@drawable/age_selector_shape"
+            app:tag="@string/tag_teenager"
+            app:text="teenage"
+            app:text_color="#FF222222"
+            app:text_size="12" />
+
+        <com.example.firstcodedemo.ui.selector.imp.MySelector
+            android:id="@+id/selector_20"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:img="@mipmap/man"
+            app:indicator="@drawable/age_selector_shape"
+            app:tag="@string/tag_man"
+            app:text="man"
+            app:text_color="#FF222222"
+            app:text_size="12" />
+
+        <com.example.firstcodedemo.ui.selector.imp.MySelector
+            android:id="@+id/selector_30"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:img="@mipmap/old_man"
+            app:indicator="@drawable/age_selector_shape"
+            app:tag="@string/tag_old_man"
+            app:text="old man"
+            app:text_color="#FF222222"
+            app:text_size="12" />
+    </android.support.v7.widget.LinearLayoutCompat>
+
+
+    <!--single-choice-->
+    <TextView
+        android:id="@+id/tvSingle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:text="single-choice mode"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.example.firstcodedemo.ui.selector.imp.MySelector
+            android:id="@+id/single10"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:img="@mipmap/teenage"
+            app:indicator="@drawable/age_selector_shape"
+            app:tag="@string/tag_single_teenager"
+            app:text="teenage"
+            app:text_color="#FF222222"
+            app:text_size="12" />
+
+        <com.example.firstcodedemo.ui.selector.imp.MySelector
+            android:id="@+id/single20"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:img="@mipmap/man"
+            app:indicator="@drawable/age_selector_shape"
+            app:tag="@string/tag_single_man"
+            app:text="man"
+            app:text_color="#FF222222"
+            app:text_size="12" />
+
+        <com.example.firstcodedemo.ui.selector.imp.MySelector
+            android:id="@+id/single30"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:img="@mipmap/old_man"
+            app:indicator="@drawable/age_selector_shape"
+            app:tag="@string/tag_single_old_man"
+            app:text="old man"
+            app:text_color="#FF222222"
+            app:text_size="12" />
+    </android.support.v7.widget.LinearLayoutCompat>
+
+
+    <!--order-choice-->
+    <TextView
+        android:id="@+id/tvOrderChoice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:text="order-choice mode"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvStarters"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Starters"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="14sp"
+        android:textStyle="italic" />
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.example.firstcodedemo.ui.selector.imp.OrderSelector
+            android:id="@+id/selector_starters_duck"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:img="@mipmap/teenage"
+            app:indicator="@drawable/love"
+            app:tag="@string/tag_starters_duck"
+            app:text="duck"
+            app:text_color="#FF222222"
+            app:text_size="12" />
+
+        <com.example.firstcodedemo.ui.selector.imp.OrderSelector
+            android:id="@+id/selector_starters_pork"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:img="@mipmap/teenage"
+            app:indicator="@drawable/love"
+            app:tag="@string/tag_starters_pork"
+            app:text="pork"
+            app:text_color="#FF222222"
+            app:text_size="12" />
+
+        <com.example.firstcodedemo.ui.selector.imp.OrderSelector
+            android:id="@+id/selector_starters_springRoll"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:img="@mipmap/teenage"
+            app:indicator="@drawable/love"
+            app:tag="@string/tag_starters_springRoll"
+            app:text="spring roll"
+            app:text_color="#FF222222"
+            app:text_size="12" />
+    </android.support.v7.widget.LinearLayoutCompat>
+
+
+    <View
+        android:id="@+id/vDivider1"
+        android:layout_width="50dp"
+        android:layout_height="1px"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="#999999" />
+
+    <TextView
+        android:id="@+id/tvMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Main"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="14sp"
+        android:textStyle="italic" />
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.example.firstcodedemo.ui.selector.imp.OrderSelector
+            android:id="@+id/selector_main_pizza"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:img="@mipmap/teenage"
+            app:indicator="@drawable/love"
+            app:tag="@string/tag_main_pizza"
+            app:text="pizza"
+            app:text_color="#FF222222"
+            app:text_size="12" />
+
+        <com.example.firstcodedemo.ui.selector.imp.OrderSelector
+            android:id="@+id/selector_main_pasta"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:img="@mipmap/teenage"
+            app:indicator="@drawable/love"
+            app:tag="@string/tag_main_pasta"
+            app:text="pasta"
+            app:text_color="#FF222222"
+            app:text_size="12" />
+    </android.support.v7.widget.LinearLayoutCompat>
+
+
+    <View
+        android:id="@+id/vDivider2"
+        android:layout_width="50dp"
+        android:layout_height="1px"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="#999999" />
+
+    <TextView
+        android:id="@+id/tvSoup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Soup"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="14sp"
+        android:textStyle="italic" />
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.example.firstcodedemo.ui.selector.imp.OrderSelector
+            android:id="@+id/selector_soup_mushroom"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:img="@mipmap/teenage"
+            app:indicator="@drawable/love"
+            app:tag="@string/tag_soup_mushroom"
+            app:text="mushroom"
+            app:text_color="#FF222222"
+            app:text_size="12" />
+
+        <com.example.firstcodedemo.ui.selector.imp.OrderSelector
+            android:id="@+id/selector_soup_scampi"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:img="@mipmap/teenage"
+            app:indicator="@drawable/love"
+            app:tag="@string/tag_soup_scampi"
+            app:text="scampi"
+            app:text_color="#FF222222"
+            app:text_size="12" />
+    </android.support.v7.widget.LinearLayoutCompat>
+
+
+</android.support.v7.widget.LinearLayoutCompat>

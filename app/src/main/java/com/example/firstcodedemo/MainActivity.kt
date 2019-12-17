@@ -24,8 +24,7 @@ import android.support.v4.app.SupportActivity
 import android.support.v4.app.SupportActivity.ExtraData
 import android.support.v4.content.ContextCompat.getSystemService
 import android.icu.lang.UCharacter.GraphemeClusterBreak.T
-
-
+import com.example.firstcodedemo.ui.selector.SelectorActivity
 
 
 class MainActivity : MyAbsActivity() {
@@ -66,15 +65,19 @@ class MainActivity : MyAbsActivity() {
             launchActivity(ShowFragmentActivity::class.java)
         }
         btn_open_md.setOnClickListener {
-            launchActivity(CategoryActivity::class.java)
+//            launchActivity(CategoryActivity::class.java)
 //            launchActivity(MDRVActivity::class.java)
-//            launchActivity(MDActivity::class.java)
+            launchActivity(MDActivity::class.java)
         }
         btn_open_musicUi.setOnClickListener {
             musicUi.invalidate()
         }
         btn_open_view.setOnClickListener{
             launchActivity(PaintActivity::class.java)
+        }
+        btn_open_fragment_activity.setOnClickListener{
+            launchActivity(FragmentActivity::class.java)
+//            launchActivity(SelectorActivity::class.java)
         }
 
 
@@ -100,7 +103,7 @@ class MainActivity : MyAbsActivity() {
                 Toast.makeText(this, "Backup", Toast.LENGTH_SHORT).show()
                 launchActivity(ImgCapthcaActivity::class.java)
             }
-            R.id.settings -> Toast.makeText(this, "Settings", Toast.LENGTH_SHORT).show()
+//            R.id.settings -> Toast.makeText(this, "Settings", Toast.LENGTH_SHORT).show()
             R.id.delete -> Toast.makeText(this, "Delete", Toast.LENGTH_SHORT).show()
         }
         return true

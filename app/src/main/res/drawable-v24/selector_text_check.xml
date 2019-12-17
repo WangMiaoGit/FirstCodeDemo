@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:color="@color/main_text" android:state_selected="false">
+        <shape>
+            <corners android:radius="60dp" />
+            <solid android:color="@color/split_line" />
+        </shape>
+    </item>
+    <item android:color="@color/colorWhit" android:state_selected="true">
+        <shape>
+            <corners android:radius="60dp" />
+            <solid android:color="@color/main_btn_text_price" />
+        </shape>
+    </item>
+</selector>

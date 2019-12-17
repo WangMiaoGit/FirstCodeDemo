@@ -11,20 +11,50 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+
         <android.support.design.widget.AppBarLayout
+            android:id="@+id/detail_appBar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <android.support.v7.widget.Toolbar
-                android:id="@+id/md_toolbar"
+            <android.support.design.widget.CollapsingToolbarLayout
                 android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"
-                android:background="@color/colorPrimary"
-                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-                app:layout_scrollFlags="scroll|snap"
-                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
-        </android.support.design.widget.AppBarLayout>
+                android:layout_height="200dp"
+                android:background="@color/colorWhit"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
 
+                <com.youth.banner.Banner
+                    android:id="@+id/category_banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/ic_launcher" />
+
+                <!--                <android.support.v7.widget.Toolbar-->
+                <!--                    android:id="@+id/md_toolbar"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="?attr/actionBarSize"-->
+                <!--                    android:background="@color/colorPrimary"-->
+                <!--                    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"-->
+                <!--                    app:layout_scrollFlags="scroll|snap"-->
+                <!--                    app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />-->
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/md_toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:fitsSystemWindows="true"
+                    android:background="@color/colorWhit"
+                    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                    app:contentInsetStart="0dp"
+                    app:layout_collapseMode="pin"
+                    app:layout_scrollFlags="scroll|snap"
+                    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                    />
+
+            </android.support.design.widget.CollapsingToolbarLayout>
+
+
+        </android.support.design.widget.AppBarLayout>
 
 
         <android.support.v4.widget.SwipeRefreshLayout

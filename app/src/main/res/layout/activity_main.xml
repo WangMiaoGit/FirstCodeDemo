@@ -46,6 +46,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="GO_VIEW" />
+        <Button
+            android:id="@+id/btn_open_fragment_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GO_f" />
     </LinearLayout>
     <com.youth.banner.Banner
         android:layout_marginTop="400dp"

@@ -168,7 +168,7 @@ class MDRVActivity : MyAbsActivity() {
         when (item?.itemId) {
             android.R.id.home -> drawer_layout.openDrawer(GravityCompat.START)
             R.id.backup -> Toast.makeText(this, "Backup", Toast.LENGTH_SHORT).show()
-            R.id.settings -> Toast.makeText(this, "Settings", Toast.LENGTH_SHORT).show()
+//            R.id.settings -> Toast.makeText(this, "Settings", Toast.LENGTH_SHORT).show()
             R.id.delete -> Toast.makeText(this, "Delete", Toast.LENGTH_SHORT).show()
         }
         return true
