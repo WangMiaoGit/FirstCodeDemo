@@ -28,6 +28,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="200dp"
                     android:scaleType="centerCrop"
+                    app:indicator_width="40dp"
+                    app:indicator_height="2dp"
+                    app:indicator_drawable_selected="@color/colorAccent"
+                    app:indicator_drawable_unselected="@color/colorWhit"
+                    app:indicator_margin="0dp"
                     android:src="@mipmap/ic_launcher" />
 
                 <!--                <android.support.v7.widget.Toolbar-->

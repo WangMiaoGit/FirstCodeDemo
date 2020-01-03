@@ -14,4 +14,18 @@
         <attr name="tag" format="reference" />
     </declare-styleable>
 
+    <!--自定义Toolbar-->
+    <declare-styleable name="TitleToolbar">
+        <!--导航图标-->
+        <attr name="nav_icon" format="reference" />
+        <!--导航文本-->
+        <attr name="nav_text" format="reference|string" />
+    </declare-styleable>
+
+    <!--搜索Toolbar-->
+    <declare-styleable name="SearchToolbar">
+        <!--导航图标-->
+        <attr name="menu_icon" format="reference" />
+    </declare-styleable>
+
 </resources>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.WebTestActivity">
+
+<!--    <com.scwang.smartrefresh.layout.SmartRefreshLayout-->
+<!--        android:id="@+id/f_main_refresh_new"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+
+<!--        <android.support.v4.widget.NestedScrollView-->
+<!--            android:id="@+id/f_main_scroll"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent">-->
+
+<!--            <android.support.v7.widget.LinearLayoutCompat-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <FrameLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="312dp">-->
+
+<!--                    <android.support.v7.widget.LinearLayoutCompat-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="81dp"-->
+<!--                        android:background="@color/main_btn_text_price">-->
+
+<!--                    </android.support.v7.widget.LinearLayoutCompat>-->
+
+<!--                    <com.youth.banner.Banner-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="150dp"-->
+<!--                        android:layout_marginStart="10dp"-->
+<!--                        android:layout_marginTop="10.5dp"-->
+<!--                        android:layout_marginEnd="10dp"-->
+<!--                        android:background="@color/colorBlack" />-->
+
+<!--                    <android.support.v7.widget.LinearLayoutCompat-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="231dp"-->
+<!--                        android:layout_marginTop="81dp">-->
+
+<!--                        <android.support.v7.widget.RecyclerView-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="match_parent"-->
+<!--                            android:layout_marginTop="79.5dp"-->
+<!--                            android:background="@color/colorAccent">-->
+
+<!--                        </android.support.v7.widget.RecyclerView>-->
+
+<!--                    </android.support.v7.widget.LinearLayoutCompat>-->
+
+<!--                </FrameLayout>-->
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none"
+    android:descendantFocusability="blocksDescendants"
+    >
+    <FrameLayout
+    android:id="@+id/f_main_fl_web_new"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary" />
+
+</ScrollView>
+
+<!--            </android.support.v7.widget.LinearLayoutCompat>-->
+<!--        </android.support.v4.widget.NestedScrollView>-->
+
+
+<!--    </com.scwang.smartrefresh.layout.SmartRefreshLayout>-->
+
+</android.support.v7.widget.LinearLayoutCompat>

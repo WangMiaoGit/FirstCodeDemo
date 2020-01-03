@@ -24,6 +24,7 @@ import com.lxj.xpopup.XPopup
 import com.lxj.xpopup.core.BasePopupView
 import com.lxj.xpopup.impl.AttachListPopupView
 import com.lxj.xpopup.impl.PartShadowPopupView
+import com.youth.banner.BannerConfig
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_md.*
 import kotlinx.coroutines.GlobalScope
@@ -113,10 +114,15 @@ class MDActivity : MyAbsActivity() {
             "https://img.tukuppt.com/bg_grid/00/03/31/VKMsak12jv.jpg",
             "https://img.tukuppt.com/bg_grid/00/04/62/KCfzjd8QIp.jpg"
         )
+
+
         //设置图片加载器
         category_banner.setImageLoader(GlideImageLoader())
         //设置图片集合
         category_banner.setImages(images)
+
+        category_banner.setBannerStyle(BannerConfig.CIRCLE_INDICATOR)
+
         //banner设置方法全部调用完毕时最后调用
         category_banner.isAutoPlay(false)
         category_banner.start()

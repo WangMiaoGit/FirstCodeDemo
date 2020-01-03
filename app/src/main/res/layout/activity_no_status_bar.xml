@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.status.NoStatusBarActivity">
+    <!--    android:background="@color/error_message"-->
+    <org.angmarch.views.NiceSpinner
+        android:id="@+id/list_spinner"
+        android:layout_width="100dp"
+        android:layout_height="50dp" />
+
+    <Button
+        android:id="@+id/btn_change_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="更换数据" />
+
+    <Button
+        android:id="@+id/btn_change_animation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="开始/停止" />
+
+    <ImageView
+        android:id="@+id/load_img_animation"
+        android:layout_marginTop="100dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@mipmap/ic_launcher"/>
+
+
+</android.support.v7.widget.LinearLayoutCompat>

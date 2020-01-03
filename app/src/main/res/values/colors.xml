@@ -8,8 +8,8 @@
 
     <color name="colorGrey">#E8ECF4</color>
     <color name="colorMain">#fff05615</color>
-
-
+    <color name="decor_bg_gray">#dddddd</color>
+    <color name="text_black">#222222</color>
     //主色调/默认按钮/可点击文字/商品价格
     <color name="main_btn_text_price">#F05615</color>
     //辅助色

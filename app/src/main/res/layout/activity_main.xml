@@ -20,43 +20,71 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
-        android:orientation="horizontal">
+        android:orientation="vertical">
 
-        <Button
-            android:id="@+id/btn_open"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="OPEN" />
+            android:layout_marginTop="60dp"
+            android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/btn_open_md"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="GO_MD" />
+            <Button
+                android:id="@+id/btn_open"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OPEN" />
 
-        <Button
-            android:id="@+id/btn_open_musicUi"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Button" />
+            <Button
+                android:id="@+id/btn_open_md"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GO_MD" />
 
-        <Button
-            android:id="@+id/btn_open_view"
-            android:layout_width="wrap_content"
+            <Button
+                android:id="@+id/btn_open_musicUi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Button" />
+
+            <Button
+                android:id="@+id/btn_open_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GO_VIEW" />
+
+            <Button
+                android:id="@+id/btn_open_fragment_activity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GO_f" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="GO_VIEW" />
-        <Button
-            android:id="@+id/btn_open_fragment_activity"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="GO_f" />
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="状态栏" />
+
+
+            <Button
+                android:id="@+id/btn_agentWeb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="webView" />
+
+        </LinearLayout>
     </LinearLayout>
+
     <com.youth.banner.Banner
-        android:layout_marginTop="400dp"
         android:id="@+id/te_banner"
         android:layout_width="match_parent"
-        android:layout_height="200dp"/>
+        android:layout_height="200dp"
+        android:layout_marginTop="400dp" />
 
 
     <com.example.firstcodedemo.ui.UITextView

@@ -2,29 +2,19 @@ package com.example.firstcodedemo
 
 
 import android.annotation.SuppressLint
-import android.app.Notification
 import android.graphics.Color
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
-import android.view.WindowManager
 import android.widget.Toast
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import com.example.firstcodedemo.activity.*
-import com.example.firstcodedemo.ui.MusicUi
 import com.example.firstcodedemo.ui.captcha.ImgCapthcaActivity
-import com.example.firstcodedemo.ui.category.CategoryActivity
 import com.example.firstcodedemo.utils.GlideRoundedCornersTransform
 import kotlinx.android.synthetic.main.activity_main.*
-import android.R.attr.banner
-import android.R.attr.start
 import com.example.firstcodedemo.ui.banner.GlideImageLoader
-import android.support.v4.app.SupportActivity
-import android.support.v4.app.SupportActivity.ExtraData
-import android.support.v4.content.ContextCompat.getSystemService
-import android.icu.lang.UCharacter.GraphemeClusterBreak.T
-import com.example.firstcodedemo.ui.selector.SelectorActivity
+import com.example.firstcodedemo.activity.status.StatusBarActivity
 
 
 class MainActivity : MyAbsActivity() {
@@ -42,6 +32,7 @@ class MainActivity : MyAbsActivity() {
         //状态栏上浮在Toolbar上方  半透明灰色
 //        window.addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
 
+        //TODO------去掉后状态栏出来灰色
         //状态栏和Toolbar重合  相当于是Activity的颜色
         window.decorView.systemUiVisibility =
             View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN;View.SYSTEM_UI_FLAG_LAYOUT_STABLE
@@ -61,23 +52,36 @@ class MainActivity : MyAbsActivity() {
 
 
 
+
         btn_open.setOnClickListener {
             launchActivity(ShowFragmentActivity::class.java)
         }
         btn_open_md.setOnClickListener {
-//            launchActivity(CategoryActivity::class.java)
+            //            launchActivity(CategoryActivity::class.java)
 //            launchActivity(MDRVActivity::class.java)
             launchActivity(MDActivity::class.java)
         }
         btn_open_musicUi.setOnClickListener {
             musicUi.invalidate()
         }
-        btn_open_view.setOnClickListener{
+        btn_open_view.setOnClickListener {
             launchActivity(PaintActivity::class.java)
         }
-        btn_open_fragment_activity.setOnClickListener{
-            launchActivity(FragmentActivity::class.java)
+
+        btn_bar.setOnClickListener {
+            launchActivity(StatusBarActivity::class.java)
+        }
+
+
+        btn_agentWeb.setOnClickListener {
+            launchActivity(WebTestActivity::class.java)
+        }
+
+
+        btn_open_fragment_activity.setOnClickListener {
+//            launchActivity(FragmentActivity::class.java)
 //            launchActivity(SelectorActivity::class.java)
+            launchActivity(CollapActivity::class.java)
         }
 
 
@@ -89,6 +93,12 @@ class MainActivity : MyAbsActivity() {
         )
         Glide.with(this).load(R.mipmap.ic_launcher)
             .apply(myOptions).into(img_main)
+
+//list中可以放不同类型
+        val listOf: List<Any> = listOf("1", 1, true)
+        //map中可以放不同类型
+        mapOf(1 to "1",2 to 2)
+
 
     }
 

@@ -59,11 +59,25 @@ abstract class MyAbsActivity : AppCompatActivity() {
         LayoutInflater.from(this).inflate(setContentLayout(), abstract_root) //解析设置的布局，并加载到根布局
 
         //Toolbar导航按钮默认返回
-//        abstract_tool_bar.setNavigationOnClickListener {
-//            finish()
-//        }
+        abstract_tool_bar.setNavigationOnClickListener {
+            finish()
+        }
     }
 
+    /**
+     * --------------------Toolbar相关方法--------------------
+     */
+
+    /**
+     * 显示Toolbar
+     */
+    protected fun showToolbar() {
+        abstract_tool_bar.visibility = View.VISIBLE
+    }
+
+    protected fun hideToolbar() {
+        abstract_tool_bar.visibility = View.GONE
+    }
 
     /**
      * --------------------软键盘相关方法--------------------
